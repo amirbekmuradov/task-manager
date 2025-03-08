@@ -28,7 +28,7 @@ A personal task manager web application to track your goals and progress. This a
 
 ## Live Demo
 
-Visit the live application: [https://yourusername.github.io/journey-planner](https://yourusername.github.io/journey-planner)
+Visit the live application: [https://amirbekmuradov.github.io/journey-planner](https://yourusername.github.io/journey-planner)
 
 ## License
 
