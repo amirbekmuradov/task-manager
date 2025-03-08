@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Journey Planner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Our Journey Planner</h1>
+    </header>
+    
+    <section class="task-form">
+      <h2>What's Our Next Goal?</h2>
+      <form id="taskForm">
+        <div class="form-group">
+          <label for="taskTitle">I want to...</label>
+          <input type="text" id="taskTitle" placeholder="What do you want to accomplish?" required>
+        </div>
+        <div class="form-group">
+          <label class="checkbox-container">
+            <input type="checkbox" id="expandDetails">
+            <span class="checkmark"></span>
+            Strengthen our plan with details
+          </label>
+        </div>
+        <div class="form-group details-group" id="detailsGroup" style="display: none;">
+          <label for="taskDescription">How will we do this?</label>
+          <textarea id="taskDescription" placeholder="What steps will help us achieve this?"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Add to Our Journey</button>
+      </form>
+    </section>
+    
+    <section class="task-list">
+      <h2>Our Progress Journey</h2>
+      <div class="filter-controls">
+        <button class="filter-btn active" data-status="all">Entire Journey</button>
+        <button class="filter-btn" data-status="pending">Still Ahead</button>
+        <button class="filter-btn" data-status="completed">Victories</button>
+      </div>
+      <div class="motivation-quote">
+        <p id="motivational-quote">"The journey of a thousand miles begins with a single step. - Lao Tzu"</p>
+        <div class="quote-controls">
+          <button id="prev-quote" class="quote-btn" title="Previous Quote">⬅️</button>
+          <button id="pause-quote" class="quote-btn" title="Pause/Resume">⏯️</button>
+          <button id="next-quote" class="quote-btn" title="Next Quote">➡️</button>
+          <button id="save-quote" class="quote-btn" title="Save Quote">❤️</button>
+        </div>
+        <div id="saved-quotes-container" style="display: none;">
+          <h3>Saved Quotes</h3>
+          <ul id="saved-quotes-list"></ul>
+        </div>
+      </div>
+      <ul id="tasks"></ul>
+    </section>
+    
+    <footer>
+      <p>Created with ❤️ | <a href="https://github.com/yourusername" target="_blank">View on GitHub</a></p>
+    </footer>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
